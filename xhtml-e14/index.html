@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Ejercicio 14</title>
+  </head>
+  <body>
+    <h1>Rellena tu CV</h1>
+    <form action="php/insertar_cv.php" method="POST">
+      <label for="name">Nombre</label><br/>
+      <input name="nombre" maxlength="30" /><br/>
+      <label for="apellidos">Apellidos</label><br/>
+      <input name="apellidos" size="50" maxlength="80"/><br/>
+      <label for="contrasenya">Contrase&ntilde;a</label><br/>
+      <input name="contrasenya" type="password" maxlength="10"/><br/>
+      <label for="dni">DNI</label><br/>
+      <input name="dni" maxlength="10" size="10"/><br/>
+      <label>G&eacute;nero</label><br/>
+      <input type="radio" name="genero" value="el">&Eacute;l</input><br/>
+      <input type="radio" name="genero" value="ella">Ella</input><br/>
+      <input type="radio" name="genero" value="elle">Elle</input><br/>
+      <input type="radio" name="genero" value="ni" checked>No importa</input><br/>
+      <label for="foto">Incluir mi foto </label><input type="file" name="foto" id="foto"/><br/>
+      <input type="checkbox" name="subscribe" /> <!-- La GRPD no me deja marcar esta casilla por defecto -->
+      <label for="subscribe">Sucribirme al bolet&iacute;n de novedades</label>
+      <br/>
+      <input type="submit" name="eviar" label="Guardar cambios">
+      <input type="reset" name="limpiar" label="Borrar  los datos introducidos" />
+    </form>
+  </body>
+</html>

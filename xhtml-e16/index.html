@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Ejercicio 16</title>
+  </head>
+  <body>
+    <h1>Informaci&oacute;n sobre el producto</h1>
+    <form action="php/insertar_cv.php" method="POST">
+      <fieldset>
+        <legend>Datos b&aacute;sicos</legend>
+        <label for="nombre">Nombre</label><br/>
+        <input name="nombre" id="nombre" size="100"/><br/>
+        <label for="descripcion">Descripci&oacute;n</label><br/>
+        <textarea id="descripcion" name="descripcion" cols="100" rows="5">
+        </textarea>
+        <br/>
+        <label for="foto">Foto </label>
+        <input type="file" id="foto" name="foto" /><br/>
+        <input type="checkbox" id="contador" nmae="contador">
+        <label for="contador">A&ntilde;adir contador de visitas</label>
+      </fieldset>
+      <fieldset>
+        <legend>Datos econ&oacute;micos</legend>
+        <label for="precio"></label>
+        <input name="precio" is="precio"/><span> &euro;&emsp;</span>
+        <label for="impuestos">Impuestos </label>
+        <select name="impuestos" id="impuestos">
+          <option value="4" selected="selected">4 %</option>
+          <option value="7">7 %</option>
+          <option value="16">16 %</option>
+          <option value="25">25 %</option>
+        </select><br/>
+        <label for="promocion">Promoci&oacute;n</label><br/>
+          <input type="radio" name="promocion" value="ninguno" checked>Ninguno
+            </input><br/>
+          <input type="radio" name="promocion" value="tg">Transporte gratuito
+            </input><br/>
+          <input type="radio" name="promocion" value="dt_5">Descuento 5 %
+            </input><br/>
+      </fieldset>
+    </form>
+  </body>
+</html>

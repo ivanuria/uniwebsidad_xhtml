@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Ejercicio 15</title>
+  </head>
+  <body>
+    <h1>Rellena tu CV</h1>
+    <form action="php/insertar_cv.php" method="POST">
+      <fieldset>
+        <legend>Datos pechonales</legend>
+        <label for="provincia">Provincia</label><br/>
+        <select id="provincia" name="provincia">
+          <option value="" selected="selected">- selecciona -</option>
+          <option value="madrid">Mandril</option>
+          <option value="toledo">Tol Edo</option>
+          <option value="avila">Alivá</option>
+          <option value="guadalajara">Órale</option>
+        </select><br/>
+        <label for="dia_n">Fecha de nacimiento</label><br/>
+        <input type="number" maxlength="2" size="3" name="dia_n"
+         min="1" max="31" value="15"/>
+        <label for="mes_n"> de </label>
+        <select id="mes_n" name="mes_n">
+          <option value="enero" selected="selected">Enero</option>
+          <option value="febrero">Febrero</option>
+          <option value="marzo">Marzo</option>
+          <option value="abril">Abril</option>
+          <option value="mayo">Mayo</option>
+          <option value="junio">Junio</option>
+          <option value="julio">Julio</option>
+          <option value="agosto">Agosto</option>
+          <option value="septiembre">Septiembre</option>
+          <option value="octubre">Octubre</option>
+          <option value="noviembre">Noviembre</option>
+          <option value="diciembre">Diciembre</option>
+        </select>
+        <label for="año_n"> de </label>
+        <input type="number" maxlength="4" size="5" name="año_n"
+          min="1900" max="2100" value="1990"/>
+        <br/>
+        <label for="interes">Temas de inter&eacute;s</label><br/>
+        <select id="interes" name="interes" size="5">
+          <option value="zankoku" selected="selected">Zankoku</option>
+          <option value="na tenshi">na tenshi</option>
+          <option value="na teeze">no teeze</option>
+          <option value="Tainted Love">Tainted Love</option>
+          <option value="gatitos">Gatitos</option>
+        </select>
+      </fieldset>
+    </form>
+  </body>
+</html>
